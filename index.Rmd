@@ -11,4 +11,4 @@ Welcome to my personal website!!
 <img src="images/maltese.gif" style="width:25%">
 
 # A Few Words About Me
-  My name is Peilin Zhou. I'm currently a graduate student studying Biostatistics at Columbia University in NYC. I'm pretty passionate about exploring the intersection of data science and healthcare! Besides that, my main hobbies are playing piano, visiting art museums, and playing basketball. More info about me is on the 
+  Hi, my name is Peilin Zhou. I'm currently a graduate student studying Biostatistics at Columbia University in NYC. I'm pretty passionate about exploring the intersection of data science and healthcare! Besides that, my main hobbies are playing piano, visiting art museums, and playing basketball. To see more info about me, please click the "About Me" button on the upper corner :)
