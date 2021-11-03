@@ -6,4 +6,41 @@ output:
     toc_float: true
 ---
 
-## 
+## Education
+* Columbia University, 2021-2023
+
+M.S. in Biostatistics
+
+* Johns Hopkins University, 2019-2021
+
+B.S. in Applied Mathematics and Statistics
+
+B.A. in Cognitive Science
+
+## Professional Experience
+* Nielsen, Data Analyst Intern, Remote, Shanghai, China, July 2020 – Oct 2020.
+    * Conducted situational assessment for international baby food company, Gerber, based on 6C framework: category, context, customer, company, channel, and competitor.
+    * Analyzed year-to-date sales data of top 5 baby food companies from C2C, B2C, and BBC channels and compared data to previous-year-to-date sales to evaluate performance of each company during the pandemic and effects of pandemic on different electronic commerce channels.
+    * Utilized consumer surveys in baby food Dip2 report to analyze performance of Gerber’s marketing strategy and compare it to competitors; identified potential opportunities and advantages of Gerber’s strategy from consumer’s perspective.
+    * Mapped out future strategy for consolidating and strengthening brand image of Gerber; recommended potential development opportunities based on 6Cs.
+
+* SMU Deason Criminal Justice Reform Center and Department of Statistics, Research Assistant, Dallas, TX, Sept 2018 – Jan 2019.
+    * Utilized packages (tidyr & dplyr) in R to conduct data wrangling to transform raw datasets of arrests in Dallas County Jail into a data frame containing only misdemeanor arrests for future analytics.
+    * Cleaned data sets by analyzing randomness of missing values and handling them with Multiple Imputation by Chained Equations method.
+    * Implemented statistical modelling and outcome analysis to process misdemeanor arrests data for alleviating mass incarceration in a local county jail.
+    * Drafted data analysis report with team to propose suggestions regarding criminal management in Dallas County Jail; report referenced on NY Times.
+Factors of Car Pricing Research, Statistical Researcher Sept 2017 – Dec 2017
+
+* Sichuan University, teaching assistant, Introduction to Statistics, Chengdu, China, June 2018 – Aug 2018
+    * Conducted office hours and assisted students to understand applications of R, SAS and SPSS via practical operations and demonstrations.
+    * Designed homework and exam answers for students on regular basis.
+    * Applied R, SAS and SPSS to guide students to walk through a complete data analysis process from establishing exploratory data analysis, understanding assumptions of tests, conducting hypothesis testing, and writing reports.
+    
+## Computer Skills
+MATLAB, R, Python, C++, Java, SAS
+
+## Honors & Awards
+* Dean’s List Fall 2020, Spring 2021
+* Second Century Scholarship ($20,000/year) 2017 – 2019
+* Honor Roll with High Distinction (Top 5% of school record) Spring 2018
+* Honor Roll with Distinction (Top 10% of school record) Fall 2017, Fall 2018, Spring 2019
