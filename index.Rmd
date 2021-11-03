@@ -4,9 +4,11 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# Welcome to my personal website!!
+Welcome to my personal website!!
 
-<img src="images/turner.jpeg" style="width:75%">
+<img src="images/maltese.gif" style="width:25%">
+
+# A Few Words About Me
+  My name is Peilin Zhou. I'm currently a graduate student studying Biostatistics at Columbia University in NYC. I'm pretty passionate about exploring the intersection of data science and healthcare! Besides that, my main hobbies are playing piano, visiting art museums, and playing basketball. More info about me is on the 
