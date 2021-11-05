@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -16,7 +16,7 @@ library(p8105.datasets)
 data("instacart")
 ```
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -38,7 +38,7 @@ fruit_plot =
 fruit_plot
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Chart B

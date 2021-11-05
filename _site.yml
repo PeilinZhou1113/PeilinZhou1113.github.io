@@ -8,6 +8,8 @@ navbar:
   right:
     - text: "Dashboard"
       href: dashboard.html
+    - text: "Plots"
+      href: plots.html
     - icon: fa-envelope fa-lg
       href: mailto:<zoezhou1113@gmail.com>
     - icon: fa-github fa-lg
