@@ -33,9 +33,9 @@ fruit_plot =
 fruit_plot
 ```
 
-
+scatter+line plot for illustrating average order hour of a day in a week for white wines in instacart. 
 ```{r}
-wine_plot = instacart %>% 
+whi_wine_plot = instacart %>% 
   filter(aisle == "white wines") %>% 
   group_by(order_dow) %>% 
   summarise(
@@ -48,6 +48,21 @@ wine_plot = instacart %>%
     title = "Average Order Hours of White Wines by Week",
     xaxis = list(title = 'Days of the Week')
   )
+whi_wine_plot
+```
+
+```{r}
+alcohol_plot = instacart %>% 
+  filter(department == "alcohol") %>%
+  plot_ly(
+    x = ~aisle, y = ~order_hour_of_day, split = ~aisle, type = "violin", box = list(visible = T)
+  ) %>% 
+  layout(
+    title = "Distribution of Order Hour of Alocohols in Instacart",
+    xaxis = list(title = "Alcohol Types"),
+    yaxis = list(title = "Order Hourder of a Day")
+  )
+alcohol_plot
 ```
 
 
