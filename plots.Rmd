@@ -11,3 +11,44 @@ library(plotly)
 library(p8105.datasets)
 ```
 
+```{r}
+data("instacart")
+```
+
+Bar plot for most popular fresh fruits ordered in instacart
+```{r}
+fruit_plot = 
+  instacart %>% 
+  filter(aisle == "fresh fruits") %>% 
+  group_by(product_name) %>% 
+  summarise(
+    n = n()
+  ) %>% 
+  filter(n > 2000) %>%
+  mutate(product_name = fct_reorder(product_name, n)) %>% 
+  plot_ly(
+    x = ~product_name, y = ~n, type = "bar", color = ~product_name, colors = "viridis"
+  ) %>% 
+  layout(title = "Most Popular Fresh Fruits in Instacart")
+fruit_plot
+```
+
+
+```{r}
+wine_plot = instacart %>% 
+  filter(aisle == "white wines") %>% 
+  group_by(order_dow) %>% 
+  summarise(
+    average_hour = mean(order_hour_of_day)
+  ) %>% 
+  plot_ly(
+    x = ~order_dow, y = ~average_hour, type = "scatter", mode = "lines"
+  ) %>% 
+  layout(
+    title = "Average Order Hours of White Wines by Week",
+    xaxis = list(title = 'Days of the Week')
+  )
+```
+
+
+
