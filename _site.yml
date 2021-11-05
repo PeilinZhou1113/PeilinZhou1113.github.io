@@ -5,13 +5,15 @@ navbar:
   left:
     - text: "About Me"
       href: about.html
-  right:
     - text: "Dashboard"
       href: dashboard.html
     - text: "Plots"
       href: plots.html
+  right:
     - icon: fa-envelope fa-lg
       href: mailto:<zoezhou1113@gmail.com>
+    - icon: fa-address-card fa-lg
+      href: www.linkedin.com/in/peilin-zhou-120b66199
     - icon: fa-github fa-lg
       href: http://github.com/PeilinZhou1113/
 output:
