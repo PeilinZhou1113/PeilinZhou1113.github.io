@@ -5,13 +5,13 @@ date: "11/5/2021"
 output: html_document
 ---
 
-```{r}
+```{r, message = FALSE}
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
 ```
 
-```{r}
+```{r, message = FALSE}
 data("instacart")
 ```
 
