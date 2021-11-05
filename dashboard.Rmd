@@ -1,0 +1,78 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, message=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("instacart")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+fruit_plot = 
+  instacart %>% 
+  filter(aisle == "fresh fruits") %>% 
+  group_by(product_name) %>% 
+  summarise(
+    n = n()
+  ) %>% 
+  filter(n > 2000) %>%
+  mutate(product_name = fct_reorder(product_name, n)) %>% 
+  plot_ly(
+    x = ~product_name, y = ~n, type = "bar", color = ~product_name, colors = "viridis"
+  ) %>% 
+  layout(title = "Most Popular Fresh Fruits in Instacart")
+fruit_plot
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+whi_wine_plot = instacart %>% 
+  filter(aisle == "white wines") %>% 
+  group_by(order_dow) %>% 
+  summarise(
+    average_hour = mean(order_hour_of_day)
+  ) %>% 
+  plot_ly(
+    x = ~order_dow, y = ~average_hour, type = "scatter", mode = "lines"
+  ) %>% 
+  layout(
+    title = "Average Order Hours of White Wines by Week",
+    xaxis = list(title = 'Days of the Week')
+  )
+whi_wine_plot
+```
+
+### Chart C
+
+```{r}
+alcohol_plot = instacart %>% 
+  filter(department == "alcohol") %>%
+  plot_ly(
+    x = ~aisle, y = ~order_hour_of_day, split = ~aisle, type = "violin", box = list(visible = T)
+  ) %>% 
+  layout(
+    title = "Distribution of Order Hour of Alocohols in Instacart",
+    xaxis = list(title = "Alcohol Types"),
+    yaxis = list(title = "Order Hourder of a Day")
+  )
+alcohol_plot
+```
+
